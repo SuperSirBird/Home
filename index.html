@@ -78,10 +78,20 @@
 <br> \
 <div id='searchbox'> \
     <h2 id='searchtitle'>General Stats</h2> \
-    <h5>UUID:</h5> \
+    <h5>UUID: <span id='UUID'></h5> \
   </div> \
       ";
       document.getElementById("usernamedisplay").innerHTML = "MC Profile: " + username;
+      getUUID();
+    }
+    
+    
+    function getUUID() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("GET", "filename", false);
+      xhttp.send();
+      var obj = JSON.parse(xhttp.responseText);
+      document.getElementById("UUID").innerHTML = obj.id;
     }
   </script>
 </body>
