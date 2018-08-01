@@ -38,12 +38,15 @@
   </div>
   
   <script>
-    alert(location.hash);
+    if (location.hash != "#" && location.hash != "") {
+      openuser(location.hash.substring(1));
+    }
+    
     function searchuser() {
       location.hash = document.getElementById("usernamesearch").value;
       openuser(document.getElementById("usernamesearch").value);
     }
     
-    function openuser(username) {}
+    function openuser(username) {alert(username)}
   </script>
 </body>
