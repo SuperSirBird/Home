@@ -24,18 +24,24 @@
 </head>
 <body>
   <br>
+  
   <h1>SuperSirBird MC</h1>
-  <br><br>
+  
+  <br><br><br>
+  
   <div id="searchbox">
     <p>
       Search ALL minecraft users and find profiles!
     </p>
     <br>
-    <input placeholder="Search MC username..."><button>Search!</button>
+    <input placeholder="Search MC username..." id="usernamesearch"><button onclick="searchuser()">Search!</button>
   </div>
+  
   <script>
-    
+    alert(location.hash);
     function searchuser() {
+      location.hash = document.getElementById("usernamesearch").value;
+      openuser(document.getElementById("usernamesearch").value);
     }
     
     function openuser(username) {}
