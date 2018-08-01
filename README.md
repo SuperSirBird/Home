@@ -5,4 +5,4 @@ http://wiki.vg/Mojang_API
 
 Note to self:
 
-encodeURIComponent(uri);
+encodeURIComponent(uri); - prob not needed. in fact most likely
