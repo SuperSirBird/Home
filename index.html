@@ -94,7 +94,7 @@
     
     function getUUID(username) {
       var xhttp = new XMLHttpRequest();
-      xhttp.open("GET", "https://api.mojang.com/users/profiles/minecraft/" + username, false);
+      xhttp.open("GET", "https://cors-anywhere.herokuapp.com/https://api.mojang.com/users/profiles/minecraft/" + username, false);
       xhttp.send();
       var obj = JSON.parse(xhttp.responseText);
       document.getElementById("UUID").innerHTML = obj.id;
