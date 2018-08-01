@@ -73,7 +73,15 @@
     
     function openuser(username) {
       alert(username);
-      document.body.innerHTML = ""
+      document.body.innerHTML = " \
+<h1 id='usernamedisplay'>Loading Name...</h1> \
+<br> \
+<div id='searchbox'> \
+    <h2 id='searchtitle'>General Stats</h2> \
+    <h5>UUID:</h5> \
+  </div> \
+      ";
+      document.getElementById("usernamedisplay").innerHTML = username;
     }
   </script>
 </body>
