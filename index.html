@@ -16,18 +16,17 @@
       padding:15px;
       box-shadow: 0px 5px 8px rgba(0,0,0,0.3);
     }
-    button {
-      padding: 12px 20px;
-      border:solid;
-      border-radius: 4px;
-      background-color: red;
-      border: 1px solid rgba(0,0,0,0.3);
-    }
     input {
-      padding: 12px 20px;
+      width: 50%;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
       border-radius: 4px;
+      font-size: 16px;
       background-color: white;
-      border: 1px solid rgba(0,0,0,0.3);
+      background-image: url('searchicon.png');
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
     }
     #searchbox {
       background-color:rgba(0,0,0,0.3);
@@ -48,7 +47,7 @@
   <div id="searchbox">
     <h2>Search ALL minecraft users and find profiles!</h2>
     <br>
-    <input placeholder="Search MC username..." id="usernamesearch"><button onclick="searchuser()">Search!</button>
+    <input placeholder="Search MC username..." id="usernamesearch">
     <br>
   </div>
   
